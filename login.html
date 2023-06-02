@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Login To Your Account</title>
   </head>
@@ -13,12 +20,40 @@
       <form role="form" id="signInForm">
         <img src="./logo.png" alt="Get Rich With Lockwood" />
         <p>Sign In To Your Account</p>
+        <span id="response"></span>
         <label> User ID </label>
         <input type="text" id="userid" />
         <label> Password </label>
         <input type="password" id="password" />
-        <button type="submit">Sign In</button>
+        <button type="submit" id="submitBtn">Sign In</button>
       </form>
     </div>
   </body>
+  <script type="text/javascript">
+    document.getElementById("signInForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      document.getElementById("response").innerHTML = "";
+      document.getElementById("response").classList.remove("show");
+
+      document.getElementById("submitBtn").innerHTML =
+        '<i class="fa fa-spinner"></i> Loading';
+
+      const userid = document.getElementById("userid").value;
+      const password = document.getElementById("password").value;
+
+      if (userid === "DrivenSelim01" && password === "GetrichSelim$") {
+        setTimeout(() => {
+          location.assign("/dashboard");
+        }, 5000);
+      } else {
+        setTimeout(() => {
+          document.getElementById("response").innerHTML =
+            "Invalid Login Details";
+          document.getElementById("response").classList.add("show");
+          document.getElementById("submitBtn").innerHTML = "Sign In";
+        }, 5000);
+      }
+    });
+  </script>
 </html>

@@ -36,6 +36,20 @@
   margin: 8px auto;
 }
 
+#response {
+  display: none;
+}
+
+#response.show {
+  display: block;
+  width: 90%;
+  margin: 12px auto;
+  padding: 6px;
+  text-align: center;
+  color: #ffffff;
+  background: #ac2344;
+}
+
 .authContainer form label {
   color: #124565;
   font-size: 16px;
@@ -59,6 +73,20 @@
   border-radius: 4px;
   background: #124565;
   color: #ffffff;
+}
+
+.authContainer form button svg,
+.authContainer form button i {
+  animation: rotateSpinner 4s infinite;
+}
+
+@keyframes rotateSpinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {
