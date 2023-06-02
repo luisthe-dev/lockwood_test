@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Geologica", sans-serif;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: #124565;
+  padding: 30px 0;
+}
+
+.nav a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.mhero {
+  background-color: #124565;
+  background: url("./1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mhero .heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mhero .heroText h3 {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.mhero .heroText p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mhero .heroText a {
+  background: #124565;
+  border-radius: 8px;
+  padding: 12px 30px;
+  color: #ffffff;
+}
+
+.intro {
+  padding: 50px 0;
+}
+
+.intro h4,
+.why h4 {
+  font-size: 48px;
+  color: #124565;
+  font-weight: 400;
+  text-align: center;
+  margin: 12px auto;
+}
+
+.introBlocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.introBlocks .introBlock {
+  border: 1px solid #12456534;
+  box-shadow: 0 0 5px 1px #124565;
+  padding: 20px;
+  border-radius: 12px;
+  width: 20%;
+  height: 100px;
+}
+
+.introBlock label {
+  font-size: 16px;
+  display: block;
+  border-radius: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+  background: #124565;
+  color: #ffffff;
+}
+
+.introBlock p {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.whyBlocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyBlock {
+  width: 95%;
+  border-radius: 12px;
+  border: 1px solid #124565;
+  padding: 20px;
+  font-size: 20px;
+  margin: 12px;
+}
+
+.footer {
+  background: #124565;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
