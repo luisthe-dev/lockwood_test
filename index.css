@@ -49,6 +49,7 @@
   color: #ffffff;
   font-size: 64px;
   font-weight: 400;
+  text-align: center;
 }
 
 .mhero .heroText p {
@@ -135,4 +136,31 @@
   text-align: center;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav img {
+    display: none;
+  }
+  .mhero .heroText h3 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .introBlocks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .introBlocks .introBlock {
+    width: 80%;
+  }
+
+  .whyBlock {
+    width: 75%;
+  }
 }
