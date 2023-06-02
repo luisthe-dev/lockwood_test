@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Geologica", sans-serif;
+}
+
+.authContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authContainer form {
+  border: 1px solid #12456534;
+  box-shadow: 0 0 5px 1px #124565;
+  width: 30%;
+  padding: 40px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.authContainer form p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #124565;
+  margin: 8px auto;
+}
+
+.authContainer form label {
+  color: #124565;
+  font-size: 16px;
+  font-weight: 600;
+  width: 90%;
+}
+
+.authContainer form input {
+  width: 90%;
+  margin: 12px auto;
+  border-radius: 8px;
+  border: 1px solid #124565;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.authContainer form button {
+  width: 45%;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 4px;
+  background: #124565;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .authContainer form {
+    width: 90%;
+  }
+}
