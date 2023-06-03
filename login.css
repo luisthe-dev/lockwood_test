@@ -17,7 +17,7 @@
   justify-content: center;
 }
 
-.authContainer form {
+form {
   border: 1px solid #12456534;
   box-shadow: 0 0 5px 1px #124565;
   width: 30%;
@@ -29,11 +29,18 @@
   flex-direction: column;
 }
 
-.authContainer form p {
+form p {
   font-size: 20px;
   font-weight: 400;
   color: #124565;
   margin: 8px auto;
+  max-width: 90%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 #response {
@@ -50,14 +57,18 @@
   background: #ac2344;
 }
 
-.authContainer form label {
+form img {
+  width: 75%;
+}
+
+form label {
   color: #124565;
   font-size: 16px;
   font-weight: 600;
   width: 90%;
 }
 
-.authContainer form input {
+form input {
   width: 90%;
   margin: 12px auto;
   border-radius: 8px;
@@ -66,7 +77,7 @@
   padding: 12px;
 }
 
-.authContainer form button {
+form button {
   width: 45%;
   margin: 10px auto;
   padding: 12px;
@@ -75,8 +86,8 @@
   color: #ffffff;
 }
 
-.authContainer form button svg,
-.authContainer form button i {
+form button svg,
+form button i {
   animation: rotateSpinner 4s infinite;
 }
 
@@ -90,7 +101,7 @@
 }
 
 @media (max-width: 768px) {
-  .authContainer form {
+  form {
     width: 90%;
   }
 }

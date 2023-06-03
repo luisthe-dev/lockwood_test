@@ -59,23 +59,25 @@
   border-radius: 25px;
   width: 28%;
   margin: 20px auto;
-  padding: 50px 30px;
+  padding: 15px 10px;
   color: #ffffff;
 }
 
 .mainContainer .main .short-welcome h5 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-left: 20px;
+  font-weight: 400;
 }
 
 .mainContainer .main .short-welcome h3 {
-  font-size: 50px;
-  margin: 12px 0;
+  font-size: 30px;
+  margin: 12px 0 20px 20px;
   font-weight: 300;
 }
 
 .mainContainer .main .short-welcome h3 label {
-  font-size: 25px;
+  font-size: 18px;
   font-size: 600;
 }
 
