@@ -53,6 +53,7 @@
   <body>
     <div class="mainContainer">
       <div class="sideBar">
+        <button class="toggleBtn" onclick="toggleSidebar()">☰</button>
         <img src="./logo.png" alt="Get Rich With Huntington Bank." width="150" height="150"  />
         <ul>
          <li> <a href="#">Dashboard</a></li>
@@ -149,6 +150,13 @@
           popup.style.display = 'none';
         }
       });
+
+      // JavaScript to toggle the sidebar
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sideBar');
+  sidebar.classList.toggle('collapsed');
+}
+
     </script>
   </body>
 </html>
