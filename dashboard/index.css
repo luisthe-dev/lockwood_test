@@ -18,15 +18,12 @@
 }
 
 .mainContainer .sideBar {
+  position:fixed;
+  left: 0;
+  width: 250%;
+  height: 100%;
   background: #124565;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 250px;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  color: #ffffff;
+  
 }
 
 .mainContainer .sideBar ul a {
