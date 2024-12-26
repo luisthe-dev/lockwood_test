@@ -29,12 +29,15 @@
   color: #ffffff;
 }
 
-.mainContainer .sideBar a {
+.mainContainer .sideBar ul a {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
   padding-bottom: 8px;
-  border-bottom: 1px solid #ffffff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65%;
 }
 
 .mainContainer .sideBar a:hover {
@@ -125,8 +128,8 @@
   text-align: center;
 }
 
-/* @media (max-width: 768px) {
-  .mainContainer .sideBar {
+@media (max-width: 768px) {
+ /*  .mainContainer .sideBar {
     display: none;
     position: absolute;
     top: 0;
