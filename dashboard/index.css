@@ -65,13 +65,14 @@ ul li a {
 }
 
 .toggleBtn {
-  background: white;
+  background: #124565;
   color: white;
   border: none;
   font-size: 30px;
   cursor: pointer;
   position: absolute;
   top: 10px;
+  width: -250px;
   left: 10px;
   z-index: 1; /* Ensure the button is above other elements */
   display: none; /* Hide the button on larger screens */
