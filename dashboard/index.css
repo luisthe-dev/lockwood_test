@@ -29,7 +29,7 @@
   color: #ffffff;
   transition: width 0.3s ease;
 }
-.mainContainer sideBar.collapsed {
+.mainContainer .sideBar.collapsed {
   width: 50px; /* Adjust to desired collapsed width */
 }
 
@@ -40,7 +40,7 @@
 
 .mainContainer .sideBar.collapsed img {
   opacity: 0; /* Hides the logo when collapsed */
-  background: #ffffff;
+  
 }
 
 /* Styling for links and button */
